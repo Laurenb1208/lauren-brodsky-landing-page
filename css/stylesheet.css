@@ -267,6 +267,9 @@ strong {
 /* ── Experience ── */
 
 .experience-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
   padding: 1.75rem 2rem;
   background-color: var(--color-surface);
   border: 1px solid #dde6f5;
@@ -290,6 +293,25 @@ strong {
 
 .experience-item:last-child {
   margin-bottom: 0;
+}
+
+.experience-logo {
+  flex-shrink: 0;
+  width: 48px;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 0.1rem;
+}
+
+.experience-logo img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.experience-body {
+  flex: 1;
 }
 
 .experience-item p {
@@ -344,7 +366,9 @@ strong {
 }
 
 .contact-links a {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
   color: var(--color-secondary);
   text-decoration: none;
   font-weight: 600;
@@ -355,6 +379,10 @@ strong {
   opacity: 0;
   transform: translateY(10px);
   transition: background-color 0.18s, color 0.18s, border-color 0.18s, transform 0.25s ease, opacity 0.3s ease;
+}
+
+.contact-links a svg {
+  flex-shrink: 0;
 }
 
 .contact-links a.visible {
@@ -421,6 +449,16 @@ footer p + p {
     align-items: flex-start;
     gap: 1rem;
     padding: 1.5rem;
+  }
+
+  .experience-item {
+    flex-direction: column;
+    gap: 0.9rem;
+    padding: 1.5rem;
+  }
+
+  .experience-logo {
+    padding-top: 0;
   }
 
   h2 {
