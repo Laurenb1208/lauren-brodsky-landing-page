@@ -1,0 +1,74 @@
+Redesign my landing page to look cleaner, more polished, and more visually balanced. The current page feels awkward, especially at the top, and I want it to look more professional.
+
+Keep all of my current content, but improve the design and layout.
+
+Main fixes I want:
+
+1. Fix the top navigation bar
+- Remove the awkward thick blue strip at the top
+- Make the navbar look cleaner and straighter
+- Make the navigation feel more modern and polished
+- Keep it simple and professional
+- Make sure spacing between nav links is even
+- Keep the navbar responsive
+
+2. Improve the hero section
+- Reduce the large empty gray space at the top
+- Make the hero section feel more balanced
+- Keep my headshot, name, tagline, and intro centered
+- Increase spacing between the headshot, name, tagline, and paragraph
+- Narrow the width of the paragraph so it reads better
+- Keep the hero section professional and not oversized
+
+3. Improve the overall page layout
+- Increase consistency in spacing between sections
+- Align all content areas evenly
+- Make the page feel cleaner and less blocky
+- Improve visual hierarchy so headings, cards, and text feel more intentional
+
+4. Improve section headings
+- Make About, Education, Experience, Skills, and Contact look more polished
+- Keep the small blue accent line if it looks good, but refine it
+- Make section headings more consistent and professional
+
+5. Improve the Education and Experience cards
+- Make the cards feel more modern and better proportioned
+- Use softer borders and subtle shadow
+- Add slightly more padding
+- Keep them minimal, clean, and professional
+- Make the University of Iowa logo align neatly with the text
+- Keep the education layout responsive
+
+6. Improve the Skills section
+- Space the skill pills more evenly
+- Make them feel cleaner and a little more modern
+- Keep them readable and consistent
+
+7. Improve the Contact section
+- Make the buttons cleaner and more polished
+- Improve spacing between buttons
+- Add a subtle hover effect
+- Keep the section simple and professional
+
+8. Improve colors and styling
+- Keep the site professional and minimal
+- Refine the current blue so it feels intentional, not harsh
+- Make the page feel softer and more visually balanced
+- Avoid flashy effects
+
+9. Keep these section orders exactly:
+- Hero
+- About
+- Education
+- Experience
+- Skills
+- Contact
+
+10. Important rules
+- Do not rewrite my content unless a very small edit is needed for spacing
+- Focus mostly on improving HTML and CSS
+- Keep it responsive on mobile
+- Keep the site student-professional, clean, and modern
+- Remove anything that looks awkward, uneven, or outdated
+
+Please update the page so it looks like a polished student portfolio website instead of a rough class project.
