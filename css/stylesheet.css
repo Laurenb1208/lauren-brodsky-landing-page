@@ -180,6 +180,40 @@ p:last-child {
   letter-spacing: 0.01em;
 }
 
+/* ── Education ── */
+
+.education-item {
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border: 1px solid var(--color-border);
+  border-left: 4px solid var(--color-accent);
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.education-details {
+  list-style: none;
+  margin-top: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 2rem;
+}
+
+.education-details li {
+  font-size: 0.95rem;
+  color: #495057;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.education-details li::before {
+  content: '·';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
 /* ── Experience ── */
 
 .experience-item {
