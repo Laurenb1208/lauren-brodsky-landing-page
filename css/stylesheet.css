@@ -374,6 +374,10 @@ strong {
 
 /* ── Contact ── */
 
+#contact {
+  background-color: var(--color-hero-bg);
+}
+
 #contact p {
   margin-bottom: 1.25rem;
 }
