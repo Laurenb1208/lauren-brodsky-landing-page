@@ -194,10 +194,17 @@ p:last-child {
   border-radius: 6px;
   margin-bottom: 1.25rem;
   box-shadow: 0 1px 4px rgba(0,0,0,0.05);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.45s ease, transform 0.45s ease, box-shadow 0.2s ease;
 }
 
-.experience-item:hover {
+.experience-item.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.experience-item.visible:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(0, 0, 128, 0.1);
 }
@@ -266,6 +273,19 @@ footer p + p {
   color: rgba(255, 255, 255, 0.45);
 }
 
+/* ── Scroll progress bar ── */
+
+#scroll-progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background-color: rgba(255, 255, 255, 0.7);
+  transition: width 0.1s linear;
+  z-index: 101;
+}
+
 /* ── Scroll fade-in ── */
 
 .fade-up {
@@ -277,6 +297,19 @@ footer p + p {
 .fade-up.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* ── Staggered skill tags ── */
+
+.skill-tag {
+  opacity: 0;
+  transform: scale(0.7);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.skill-tag.visible {
+  opacity: 1;
+  transform: scale(1);
 }
 
 /* ── Responsive ── */
