@@ -1,3 +1,11 @@
+/* ── Hero staggered load animation ── */
+document.addEventListener('DOMContentLoaded', () => {
+  const heroEls = document.querySelectorAll('.hero-animate');
+  heroEls.forEach((el, i) => {
+    setTimeout(() => el.classList.add('visible'), 150 + i * 160);
+  });
+});
+
 /* ── Scroll progress bar ── */
 const progressBar = document.getElementById('scroll-progress');
 

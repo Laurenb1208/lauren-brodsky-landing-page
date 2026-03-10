@@ -200,6 +200,12 @@ strong {
   border: 1px solid #dde6f5;
   border-radius: 12px;
   box-shadow: 0 2px 12px rgba(31, 58, 138, 0.07);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.education-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(31, 58, 138, 0.11);
 }
 
 .education-logo {
@@ -394,6 +400,19 @@ strong {
   background-color: var(--color-secondary);
   color: #ffffff;
   transform: translateY(-2px);
+}
+
+/* ── Hero load animation ── */
+
+.hero-animate {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+.hero-animate.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* ── Scroll fade-in ── */
