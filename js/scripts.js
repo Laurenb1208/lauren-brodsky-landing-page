@@ -15,7 +15,7 @@ const hero = document.getElementById('hero');
 
 function updateParallax() {
   if (hero.getBoundingClientRect().bottom > 0) {
-    heroImg.style.transform = 'translateY(' + (window.scrollY * 0.3) + 'px)';
+    heroImg.style.transform = 'translateY(' + (window.scrollY * 0.18) + 'px)';
   }
 }
 
@@ -26,25 +26,66 @@ const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (!entry.isIntersecting) return;
     const el = entry.target;
-
-    if (el.classList.contains('fade-up')) {
-      el.classList.add('visible');
-    }
-
-    if (el.id === 'skills') {
-      document.querySelectorAll('.skill-tag').forEach((tag, i) => {
-        setTimeout(() => tag.classList.add('visible'), i * 60);
-      });
-    }
-
-    if (el.id === 'experience') {
-      document.querySelectorAll('.experience-item').forEach((card, i) => {
-        setTimeout(() => card.classList.add('visible'), i * 150);
-      });
-    }
-
+    el.classList.add('visible');
     observer.unobserve(el);
+  });
+}, { threshold: 0.12 });
+
+/* Section headings */
+document.querySelectorAll('h2').forEach(el => observer.observe(el));
+
+/* About paragraphs */
+document.querySelectorAll('#about p').forEach((el, i) => {
+  el.classList.add('fade-up');
+  el.style.transitionDelay = (i * 80) + 'ms';
+  observer.observe(el);
+});
+
+/* Education card */
+document.querySelectorAll('.education-item').forEach((el, i) => {
+  el.classList.add('fade-up');
+  el.style.transitionDelay = (i * 100) + 'ms';
+  observer.observe(el);
+});
+
+/* Whole section fade-ups (about, education, contact) */
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+/* Experience cards stagger */
+const expObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+    document.querySelectorAll('.experience-item').forEach((card, i) => {
+      setTimeout(() => card.classList.add('visible'), i * 140);
+    });
+    expObserver.unobserve(entry.target);
   });
 }, { threshold: 0.1 });
 
-document.querySelectorAll('.fade-up, #skills, #experience').forEach(el => observer.observe(el));
+expObserver.observe(document.getElementById('experience'));
+
+/* Skill tags stagger */
+const skillObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+    document.querySelectorAll('.skill-tag').forEach((tag, i) => {
+      setTimeout(() => tag.classList.add('visible'), i * 55);
+    });
+    skillObserver.unobserve(entry.target);
+  });
+}, { threshold: 0.1 });
+
+skillObserver.observe(document.getElementById('skills'));
+
+/* Contact links stagger */
+const contactObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+    document.querySelectorAll('.contact-links a').forEach((link, i) => {
+      setTimeout(() => link.classList.add('visible'), i * 100);
+    });
+    contactObserver.unobserve(entry.target);
+  });
+}, { threshold: 0.1 });
+
+contactObserver.observe(document.getElementById('contact'));
