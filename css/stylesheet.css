@@ -23,8 +23,8 @@ html {
 
 body {
   font-family: 'Inter', sans-serif;
-  font-size: 16px;
-  line-height: 1.75;
+  font-size: 17px;
+  line-height: 1.78;
   color: var(--color-text);
   background-color: var(--color-bg);
 }
@@ -136,19 +136,24 @@ nav {
 /* ── Main content sections ── */
 
 main > section:not(#hero) {
-  padding: 4rem max(1.5rem, calc((100% - var(--max-width)) / 2));
+  padding: 5rem max(1.5rem, calc((100% - var(--max-width)) / 2));
   background-color: var(--color-surface);
   position: relative;
+}
+
+#education,
+#skills {
+  background-color: #F4F7FD;
 }
 
 main > section:not(#hero):not(:last-of-type)::after {
   content: '';
   position: absolute;
   bottom: 0;
-  left: 8%;
-  right: 8%;
-  height: 1px;
-  background: linear-gradient(to right, transparent, var(--color-border) 25%, var(--color-border) 75%, transparent);
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--color-border) 15%, var(--color-border) 85%, transparent);
 }
 
 /* ── Headings ── */
@@ -159,7 +164,7 @@ h2 {
   color: var(--color-primary);
   text-transform: uppercase;
   letter-spacing: 0.07em;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   padding-left: 1rem;
   border-left: 4px solid var(--color-secondary);
   display: block;
@@ -453,13 +458,13 @@ footer {
   text-align: center;
   padding: 1.25rem 1.5rem;
   font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.65);
+  color: rgba(255, 255, 255, 0.92);
 }
 
 footer p + p {
   margin-top: 0.25rem;
   font-size: 0.74rem;
-  color: rgba(255, 255, 255, 0.38);
+  color: rgba(255, 255, 255, 0.82);
 }
 
 /* ── Responsive ── */
@@ -478,7 +483,7 @@ footer p + p {
   }
 
   main > section:not(#hero) {
-    padding: 3rem 1.25rem;
+    padding: 3.5rem 1.25rem;
   }
 
   .education-item {
