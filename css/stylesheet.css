@@ -78,7 +78,7 @@ nav {
 /* ── Hero ── */
 
 #hero {
-  background-color: #e6f2f7;
+  background-color: #f0f5fb;
   color: var(--color-text);
   text-align: center;
   padding: 5.5rem 1.5rem 9rem;
@@ -130,10 +130,6 @@ main > section:last-of-type {
   border-bottom: none;
 }
 
-#about,
-#contact {
-  background-color: var(--color-accent-light);
-}
 
 /* ── Headings ── */
 
