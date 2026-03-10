@@ -8,7 +8,7 @@
   --color-bg: #ffffff;
   --color-text: #212529;
   --color-accent: #000080;
-  --color-accent-light: #e8e8f5;
+  --color-accent-light: #e6f2f7;
   --color-secondary-bg: #E9ECEF;
   --color-border: #dee2e6;
   --max-width: 800px;
@@ -81,7 +81,8 @@ nav {
   background-color: #e6f2f7;
   color: var(--color-text);
   text-align: center;
-  padding: 5.5rem 1.5rem;
+  padding: 5.5rem 1.5rem 9rem;
+  clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
 }
 
 #hero img {
@@ -93,7 +94,7 @@ nav {
   display: block;
   margin: 0 auto 1.75rem;
   background-color: rgba(255,255,255,0.4);
-  box-shadow: 0 4px 16px rgba(0, 0, 128, 0.12);
+  box-shadow: 0 4px 20px rgba(0, 0, 128, 0.15);
 }
 
 #hero h1 {
@@ -118,12 +119,10 @@ nav {
   margin: 0 auto;
 }
 
-/* ── Main content ── */
+/* ── Main content sections (full-width with centered content) ── */
 
 main > section:not(#hero) {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 3.5rem 1.5rem;
+  padding: 3.5rem max(1.5rem, calc((100% - var(--max-width)) / 2));
   border-bottom: 1px solid var(--color-border);
 }
 
@@ -131,13 +130,20 @@ main > section:last-of-type {
   border-bottom: none;
 }
 
+#about,
+#contact {
+  background-color: var(--color-accent-light);
+}
+
+/* ── Headings ── */
+
 h2 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: var(--color-accent);
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.75rem;
   padding-left: 0.85rem;
   border-left: 4px solid var(--color-accent);
   display: block;
@@ -188,6 +194,12 @@ p:last-child {
   border-radius: 6px;
   margin-bottom: 1.25rem;
   box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.experience-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 128, 0.1);
 }
 
 .experience-item:last-child {
@@ -254,11 +266,24 @@ footer p + p {
   color: rgba(255, 255, 255, 0.45);
 }
 
+/* ── Scroll fade-in ── */
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* ── Responsive ── */
 
 @media (max-width: 600px) {
   #hero {
-    padding: 3.5rem 1.25rem;
+    padding: 3.5rem 1.25rem 7rem;
   }
 
   #hero h1 {
@@ -268,10 +293,6 @@ footer p + p {
   .nav-links a {
     padding: 0.5rem 0.65rem;
     font-size: 0.85rem;
-  }
-
-  main > section:not(#hero) {
-    padding: 2.5rem 1.25rem;
   }
 }
 
