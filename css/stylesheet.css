@@ -458,13 +458,13 @@ footer {
   text-align: center;
   padding: 1.25rem 1.5rem;
   font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.92);
+  color: #ffffff;
 }
 
 footer p + p {
   margin-top: 0.25rem;
   font-size: 0.74rem;
-  color: rgba(255, 255, 255, 0.82);
+  color: #ffffff;
 }
 
 /* ── Responsive ── */
