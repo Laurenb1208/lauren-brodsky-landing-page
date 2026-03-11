@@ -118,7 +118,7 @@ nav {
 #hero {
   background: linear-gradient(150deg, #dce8fb 0%, #EDF2FB 55%, #e4edfc 100%);
   text-align: center;
-  padding: 3.5rem 1.5rem 6rem;
+  padding: 2.5rem 1.5rem 4.5rem;
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
 
@@ -423,7 +423,7 @@ strong {
 .tech-tag {
   color: var(--color-primary);
   font-size: 0.95rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.01em;
   background: none;
   border: none;
@@ -439,7 +439,7 @@ strong {
 .project-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.7rem;
+  gap: 1rem;
   margin-top: 1.1rem;
 }
 
@@ -541,7 +541,7 @@ strong {
 footer {
   background-color: var(--color-primary);
   text-align: center;
-  padding: 1.25rem 1.5rem;
+  padding: 2rem 1.5rem;
 }
 
 footer p {
