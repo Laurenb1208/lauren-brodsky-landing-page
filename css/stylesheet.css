@@ -159,7 +159,7 @@ nav {
 /* ── Main content sections ── */
 
 main > section:not(#hero) {
-  padding: 5.5rem max(1.5rem, calc((100% - var(--max-width)) / 2));
+  padding: 3.5rem max(1.5rem, calc((100% - var(--max-width)) / 2));
   background-color: var(--color-surface);
   position: relative;
 }
@@ -167,10 +167,6 @@ main > section:not(#hero) {
 #education,
 #projects {
   background-color: #F4F7FD;
-}
-
-#projects {
-  padding-top: 3rem;
 }
 
 /* ── Headings ── */
