@@ -169,6 +169,10 @@ main > section:not(#hero) {
   background-color: #F4F7FD;
 }
 
+#projects {
+  padding-top: 3rem;
+}
+
 /* ── Headings ── */
 
 h2 {
