@@ -110,3 +110,19 @@ const contactObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.1 });
 
 contactObserver.observe(document.getElementById('contact'));
+
+/* ── Active nav link on scroll ── */
+const navSections = document.querySelectorAll('main > section[id]');
+const navAnchors = document.querySelectorAll('.nav-links a');
+
+const activeObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      navAnchors.forEach(a => a.classList.remove('active'));
+      const match = document.querySelector(`.nav-links a[href="#${entry.target.id}"]`);
+      if (match) match.classList.add('active');
+    }
+  });
+}, { rootMargin: '-30% 0px -60% 0px', threshold: 0 });
+
+navSections.forEach(s => activeObserver.observe(s));
