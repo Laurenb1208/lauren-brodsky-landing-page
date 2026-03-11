@@ -63,7 +63,7 @@ document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 const expObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (!entry.isIntersecting) return;
-    document.querySelectorAll('.experience-item').forEach((card, i) => {
+    entry.target.querySelectorAll('.experience-item').forEach((card, i) => {
       setTimeout(() => card.classList.add('visible'), i * 140);
     });
     expObserver.unobserve(entry.target);
@@ -71,6 +71,19 @@ const expObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.1 });
 
 expObserver.observe(document.getElementById('experience'));
+
+/* Project cards stagger */
+const projObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+    entry.target.querySelectorAll('.experience-item').forEach((card, i) => {
+      setTimeout(() => card.classList.add('visible'), i * 140);
+    });
+    projObserver.unobserve(entry.target);
+  });
+}, { threshold: 0.1 });
+
+projObserver.observe(document.getElementById('projects'));
 
 /* Skill tags stagger */
 const skillObserver = new IntersectionObserver((entries) => {

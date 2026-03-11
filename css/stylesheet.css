@@ -142,7 +142,7 @@ main > section:not(#hero) {
 }
 
 #education,
-#skills {
+#projects {
   background-color: #F4F7FD;
 }
 
@@ -378,6 +378,34 @@ strong {
   background-color: var(--color-secondary);
   color: #ffffff;
   border-color: var(--color-secondary);
+}
+
+/* ── Projects ── */
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.project-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--color-secondary);
+  text-decoration: none;
+  font-size: 0.84rem;
+  font-weight: 600;
+  padding: 0.4rem 1rem;
+  border: 1.5px solid var(--color-secondary);
+  border-radius: 999px;
+  transition: background-color 0.18s, color 0.18s, border-color 0.18s;
+}
+
+.project-btn:hover {
+  background-color: var(--color-secondary);
+  color: #ffffff;
 }
 
 /* ── Contact ── */
