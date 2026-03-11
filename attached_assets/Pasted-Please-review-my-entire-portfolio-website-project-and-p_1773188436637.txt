@@ -1,0 +1,63 @@
+Please review my entire portfolio website project and perform a full polish and cleanup while keeping the current design and content.
+
+Goals:
+Improve overall quality, consistency, and code cleanliness without changing the structure of the site.
+
+Tasks to complete:
+
+1. Code Quality Review
+- Check index.html, stylesheet.css, and scripts.js for any errors, unused code, or inefficiencies.
+- Remove unused CSS classes, duplicate styles, or unnecessary JavaScript.
+- Ensure the HTML structure is clean and properly indented.
+- Ensure all images have proper alt text for accessibility.
+- Verify that links and buttons work correctly.
+
+2. CSS Cleanup
+- Consolidate duplicate CSS rules.
+- Make spacing consistent across sections.
+- Ensure margins and padding follow a consistent pattern.
+- Improve readability of the CSS file with clear section comments.
+
+3. Responsive Design Check
+- Make sure the site looks good on:
+  - desktop
+  - tablet
+  - mobile
+- Fix any spacing or layout issues on smaller screens.
+
+4. Performance Improvements
+- Ensure images are optimized and properly sized.
+- Avoid unnecessary JavaScript execution.
+- Ensure the page loads efficiently.
+
+5. Visual Consistency
+- Ensure consistent spacing between sections.
+- Make sure card styles (Experience, Projects, Education) look consistent.
+- Ensure buttons have consistent styling and hover effects.
+- Ensure fonts and colors remain consistent across the entire page.
+
+6. Projects Section Cleanup
+- Ensure the technology stack labels appear as simple dark blue text (not pill bubbles).
+- Make spacing between the project title, tech stack, description, and buttons balanced.
+
+7. Animation Review
+- Ensure scroll animations are subtle and smooth.
+- Avoid any animations that feel distracting or slow.
+
+8. Accessibility Improvements
+- Ensure color contrast is readable.
+- Add alt text for images if missing.
+- Ensure buttons and links are accessible.
+
+9. Final Polish
+- Improve spacing where sections feel cramped.
+- Make sure the hero section looks balanced.
+- Ensure the skills section remains clean and organized.
+
+Important:
+- Do NOT rewrite my content.
+- Do NOT change the section order.
+- Do NOT redesign the page completely.
+- Only polish, fix issues, and improve consistency.
+
+The goal is to make the site feel more professional, cleaner, and production-ready while keeping the current design.
