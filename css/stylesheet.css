@@ -169,16 +169,6 @@ main > section:not(#hero) {
   background-color: #F4F7FD;
 }
 
-main > section:not(#hero):not(:last-of-type)::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: linear-gradient(to right, transparent, var(--color-border) 15%, var(--color-border) 85%, transparent);
-}
-
 /* ── Headings ── */
 
 h2 {

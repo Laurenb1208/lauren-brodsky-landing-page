@@ -1,0 +1,91 @@
+Make final design and polish improvements to bring my portfolio website as close to a 10/10 as possible while keeping it professional, clean, and suitable for a student portfolio.
+
+Do not redesign the whole site. Keep my current structure, content, color palette, and overall style. Focus on polish, consistency, hierarchy, spacing, interaction, and responsiveness.
+
+Please improve the site in these ways:
+
+1. Hero section
+- Make the hero section feel stronger and more polished
+- Slightly increase the size of my name
+- Improve spacing between the headshot, name, tagline, and intro text
+- Make the hero feel balanced and intentional, not flat
+- Keep it simple and professional
+
+2. Navigation bar
+- Improve spacing and alignment in the navbar
+- Add a smooth animated underline effect on hover
+- Keep the active section visually clear
+- Make sure the site title on the left is properly aligned and not cramped
+- Keep the navbar polished and modern
+
+3. Section hierarchy
+- Make section headers larger and more noticeable
+- Improve spacing above and below each section heading
+- Keep the blue accent line but refine it so it looks intentional
+- Make it very clear where each section begins
+
+4. Section separation
+- Improve visual separation between sections using spacing, background contrast, subtle dividers, or section rhythm
+- Alternate backgrounds only if it improves readability
+- Make the page easier to scan
+
+5. Cards
+- Make Education, Experience, and Project cards feel more premium
+- Use slightly softer shadows, slightly better border radius, and balanced padding
+- Add a subtle hover lift effect
+- Keep the motion smooth and minimal
+- Make all cards feel visually consistent
+
+6. Projects section
+- Keep the project cards clean and readable
+- Ensure the technology stack under each project title appears as simple dark blue bold text, not pill bubbles
+- Make spacing between title, tech stack, description, and buttons look polished
+- Ensure buttons are aligned and consistently spaced
+
+7. Skills section
+- Improve the layout of the skill items so the section looks structured and intentional
+- Increase spacing between rows
+- Slightly increase pill size and padding
+- Add a subtle hover effect if it helps
+- Keep the section clean and easy to scan
+
+8. Contact section
+- Make the contact area feel a little more polished and intentional
+- Keep the button styles consistent
+- Improve spacing between the text and the buttons
+- Keep it simple and professional
+
+9. Footer
+- Make the footer look cleaner and more polished
+- Improve spacing and readability
+- Keep it minimal and not heavy
+
+10. Motion and interaction
+- Add very subtle scroll reveal animations for sections or cards if they improve the experience
+- Keep animations smooth, lightweight, and professional
+- Avoid anything flashy, bouncy, or distracting
+- Add smooth scrolling for navigation links
+
+11. Typography and readability
+- Improve text hierarchy across the page
+- Make sure paragraph text is easy to read
+- Ensure body text contrast is strong
+- Keep paragraph widths readable and not too narrow
+
+12. Responsive design
+- Review the site on desktop, tablet, and mobile
+- Fix any spacing or alignment issues
+- Make sure cards, buttons, nav, and sections all adapt cleanly
+
+13. Code quality
+- Review HTML, CSS, and JavaScript for any issues
+- Clean up duplicate or unused code
+- Ensure class names and structure remain clear
+- Preserve accessibility best practices such as alt text and readable contrast
+
+Important rules:
+- Do not rewrite my content unless absolutely necessary
+- Do not change the order of my sections
+- Do not make the site flashy or overdesigned
+- Keep everything professional, modern, balanced, and polished
+- The goal is to make this look like a strong real portfolio website, not just a class project
