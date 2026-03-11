@@ -362,6 +362,21 @@ strong {
 
 /* ── Skills ── */
 
+.skills-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.skill-group-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--color-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.75rem;
+}
+
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
