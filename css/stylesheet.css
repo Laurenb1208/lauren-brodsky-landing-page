@@ -387,19 +387,25 @@ strong {
 .tech-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.4rem;
-  margin-bottom: 0.75rem;
+  align-items: center;
+  gap: 0;
+  margin-bottom: 0.65rem;
 }
 
 .tech-tag {
-  background-color: var(--color-accent-light);
   color: var(--color-primary);
-  font-size: 0.78rem;
+  font-size: 0.84rem;
   font-weight: 600;
-  padding: 0.25rem 0.75rem;
-  border-radius: 999px;
-  border: 1px solid rgba(59, 130, 246, 0.35);
   letter-spacing: 0.01em;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.tech-tag:not(:last-child)::after {
+  content: '\00A0\2022\00A0';
+  font-weight: 400;
+  opacity: 0.55;
 }
 
 .project-links {
