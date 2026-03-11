@@ -40,7 +40,3 @@ Configured as a static deployment with `publicDir: "."`.
 - Secondary Background: #E9ECEF
 - Max content width: 800px
 - Font: Inter
-
-## Notes
-- The headshot image (`images/headshot.jpg`) needs to be added by Lauren — placeholder shown until then
-- LinkedIn/GitHub/email links in `index.html` use placeholder URLs and should be updated
