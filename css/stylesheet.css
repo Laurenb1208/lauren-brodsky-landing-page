@@ -437,14 +437,6 @@ strong {
   transform: translateY(0);
 }
 
-.skill-tag.visible:hover {
-  background-color: var(--color-secondary);
-  color: #ffffff;
-  border-color: var(--color-secondary);
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.25);
-}
-
 /* ── Projects ── */
 
 .tech-tags {
