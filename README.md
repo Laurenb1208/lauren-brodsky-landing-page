@@ -5,6 +5,8 @@ This project is a personal landing page created for the BAIS 3300 Digital Produc
 
 The goal of this project is to create a digital home where recruiters, hiring managers, and professional connections can quickly learn more about me and view my skills and experience.
 
+🌐 Visit my website: [laurenbrodsky.org](https://laurenbrodsky.org/)
+
 ## Features
 - Hero section with profile photo and professional tagline
 - About section describing my academic focus and career interests
